@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global resets ────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #0F1923;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+/* ── Scrollbar (Webkit) ──────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ── Chat markdown rendering ─────────────────────────────────────────── */
+
+.chat-markdown h1,
+.chat-markdown h2,
+.chat-markdown h3 {
+  font-weight: 600;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: #f1f5f9;
+}
+
+.chat-markdown h1 { font-size: 1.25rem; }
+.chat-markdown h2 { font-size: 1.1rem; }
+.chat-markdown h3 { font-size: 1rem; }
+
+.chat-markdown p {
+  margin-bottom: 0.5rem;
+  line-height: 1.65;
+}
+
+.chat-markdown ul,
+.chat-markdown ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat-markdown li {
+  margin-bottom: 0.25rem;
+}
+
+.chat-markdown strong {
+  color: #C9A84C;
+  font-weight: 600;
+}
+
+.chat-markdown code {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.chat-markdown pre {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 0.5rem;
+}
+
+.chat-markdown a {
+  color: #38a3f8;
+  text-decoration: underline;
+}
+
+/* ── Typing indicator ────────────────────────────────────────────────── */
+
+.typing-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #C9A84C;
+  animation: typingBounce 1.4s infinite ease-in-out both;
+}
+
+.typing-dot:nth-child(1) { animation-delay: -0.32s; }
+.typing-dot:nth-child(2) { animation-delay: -0.16s; }
+.typing-dot:nth-child(3) { animation-delay: 0s; }
+
+@keyframes typingBounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ── Glass morphism utility ──────────────────────────────────────────── */
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── MapLibre overrides ──────────────────────────────────────────────── */
+
+.maplibregl-popup-content {
+  background: rgba(15, 25, 35, 0.95) !important;
+  color: #e2e8f0 !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.8rem !important;
+  border: 1px solid rgba(201, 168, 76, 0.3) !important;
+}
+
+.maplibregl-popup-tip {
+  border-top-color: rgba(15, 25, 35, 0.95) !important;
+}

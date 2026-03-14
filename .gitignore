@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Dubai Copilot — downloaded CSV data (large files)
+data/
+*.csv
+
+# Node.js
+node_modules/
+frontend/dist/

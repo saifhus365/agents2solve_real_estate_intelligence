@@ -1,0 +1,35 @@
+# Backend dependencies
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+structlog>=24.4.0
+
+# Database drivers
+asyncpg>=0.30.0
+neo4j>=5.26.0
+pinecone-client>=5.0.0
+
+# LLM & Embeddings
+openai>=1.57.0
+sentence-transformers>=3.3.0
+torch>=2.0.0
+
+# Data ingestion
+httpx>=0.28.0
+feedparser>=6.0.11
+PyPDF2>=3.0.1
+
+# Agent framework
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# Task queue
+celery[redis]>=5.4.0
+
+# Evaluation
+wandb>=0.19.0
+numpy>=1.26.0
+
+# Cross-encoder reranker
+# (included in sentence-transformers)

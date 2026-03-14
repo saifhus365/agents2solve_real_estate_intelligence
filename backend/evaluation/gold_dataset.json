@@ -1,0 +1,402 @@
+[
+  {
+    "id": "f01",
+    "category": "factual",
+    "question": "What is the average price per square foot for apartments in Business Bay over the last 12 months?",
+    "expected_answer": "The average price per sqft for apartments in Business Bay over the last 12 months is approximately AED 1,800-2,200 per sqft.",
+    "expected_query_type": "timeseries",
+    "expected_entities": ["Business Bay"]
+  },
+  {
+    "id": "f02",
+    "category": "factual",
+    "question": "How many real estate transactions occurred in Dubai Marina in Q4 2024?",
+    "expected_answer": "Dubai Marina recorded approximately 1,200-1,500 transactions in Q4 2024.",
+    "expected_query_type": "timeseries",
+    "expected_entities": ["Dubai Marina"]
+  },
+  {
+    "id": "f03",
+    "category": "factual",
+    "question": "What is the current average price per sqft in JVC for 2-bedroom apartments?",
+    "expected_answer": "The average price per sqft for 2-bed apartments in JVC is approximately AED 850-1,100.",
+    "expected_query_type": "timeseries",
+    "expected_entities": ["JVC", "Jumeirah Village Circle"]
+  },
+  {
+    "id": "f04",
+    "category": "factual",
+    "question": "What was the total transaction value in Downtown Dubai last month?",
+    "expected_answer": "The total transaction value in Downtown Dubai last month was approximately AED 2-3 billion.",
+    "expected_query_type": "timeseries",
+    "expected_entities": ["Downtown Dubai"]
+  },
+  {
+    "id": "f05",
+    "category": "factual",
+    "question": "What is the year-over-year price change in Palm Jumeirah?",
+    "expected_answer": "Palm Jumeirah experienced approximately 8-15% YoY price increase.",
+    "expected_query_type": "timeseries",
+    "expected_entities": ["Palm Jumeirah"]
+  },
+  {
+    "id": "f06",
+    "category": "factual",
+    "question": "How many off-plan transactions were recorded in Dubai Hills Estate in the last 6 months?",
+    "expected_answer": "Dubai Hills Estate recorded significant off-plan activity with several hundred transactions in the last 6 months.",
+    "expected_query_type": "timeseries",
+    "expected_entities": ["Dubai Hills Estate"]
+  },
+  {
+    "id": "f07",
+    "category": "factual",
+    "question": "What is the average price for a 1-bedroom apartment in JLT?",
+    "expected_answer": "The average price for a 1-bed apartment in JLT is approximately AED 700,000-900,000.",
+    "expected_query_type": "timeseries",
+    "expected_entities": ["Jumeirah Lake Towers", "JLT"]
+  },
+  {
+    "id": "f08",
+    "category": "factual",
+    "question": "Which area has the highest average price per sqft in Dubai currently?",
+    "expected_answer": "Palm Jumeirah and Downtown Dubai typically have the highest average price per sqft.",
+    "expected_query_type": "timeseries",
+    "expected_entities": []
+  },
+  {
+    "id": "f09",
+    "category": "factual",
+    "question": "What is the transaction volume trend in Arabian Ranches over the past year?",
+    "expected_answer": "Arabian Ranches has shown steady transaction volumes with seasonal fluctuations over the past year.",
+    "expected_query_type": "timeseries",
+    "expected_entities": ["Arabian Ranches"]
+  },
+  {
+    "id": "f10",
+    "category": "factual",
+    "question": "What is the price per sqft for villas in DAMAC Hills?",
+    "expected_answer": "The price per sqft for villas in DAMAC Hills ranges from AED 900-1,300.",
+    "expected_query_type": "timeseries",
+    "expected_entities": ["DAMAC Hills"]
+  },
+  {
+    "id": "g01",
+    "category": "multihop",
+    "question": "Which developers have delivered projects on time in Dubai Marina and what are their upcoming launches?",
+    "expected_answer": "Developers with on-time delivery records in Dubai Marina include Emaar and Select Group, with upcoming off-plan launches planned.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Dubai Marina", "Emaar", "Select Group"]
+  },
+  {
+    "id": "g02",
+    "category": "multihop",
+    "question": "Show me all projects by Emaar in Downtown Dubai and their transaction history.",
+    "expected_answer": "Emaar projects in Downtown Dubai include Burj Vista, The Address Residences, and Opera Grand with extensive transaction records.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Emaar", "Downtown Dubai"]
+  },
+  {
+    "id": "g03",
+    "category": "multihop",
+    "question": "Which developer launched the most projects in JVC and what is their on-time delivery rate?",
+    "expected_answer": "Multiple developers have launched projects in JVC. The leading developers include Danube and Sobha with varying delivery rates.",
+    "expected_query_type": "graph",
+    "expected_entities": ["JVC", "Jumeirah Village Circle"]
+  },
+  {
+    "id": "g04",
+    "category": "multihop",
+    "question": "What RERA permits have been granted to Nakheel and for which projects?",
+    "expected_answer": "Nakheel has received multiple RERA permits for projects across Palm Jumeirah and other areas.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Nakheel", "RERAPermit"]
+  },
+  {
+    "id": "g05",
+    "category": "multihop",
+    "question": "Which areas have projects by both Emaar and DAMAC?",
+    "expected_answer": "Both Emaar and DAMAC have projects in areas such as Dubai Hills, Business Bay, and other locations.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Emaar", "DAMAC"]
+  },
+  {
+    "id": "g06",
+    "category": "multihop",
+    "question": "Show me the transaction chain for units in Emaar Beachfront — who bought and resold?",
+    "expected_answer": "Emaar Beachfront units have seen multiple transactions with varying hold periods and price appreciation.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Emaar", "Emaar Beachfront"]
+  },
+  {
+    "id": "g07",
+    "category": "multihop",
+    "question": "Which developers have a track record of delivering in Business Bay and what was their average delay?",
+    "expected_answer": "Developers with track records in Business Bay include DAMAC and Omniyat, with varying delivery timelines.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Business Bay"]
+  },
+  {
+    "id": "g08",
+    "category": "multihop",
+    "question": "List all off-plan projects near Dubai Metro stations with their developers.",
+    "expected_answer": "Several off-plan projects are located near metro stations across Dubai Marina, Downtown, and Business Bay.",
+    "expected_query_type": "graph",
+    "expected_entities": ["MetroStation"]
+  },
+  {
+    "id": "g09",
+    "category": "multihop",
+    "question": "What projects did Meraas launch and in which areas are they located?",
+    "expected_answer": "Meraas has launched projects in City Walk, Bluewaters, and other areas in Dubai.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Meraas"]
+  },
+  {
+    "id": "g10",
+    "category": "multihop",
+    "question": "Which developers have the highest on-time delivery rate across all areas?",
+    "expected_answer": "Top developers by on-time delivery include Emaar and Dubai Properties with rates above 85%.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Developer"]
+  },
+  {
+    "id": "g11",
+    "category": "multihop",
+    "question": "Show me the relationship between Sobha and their projects in MBR City.",
+    "expected_answer": "Sobha has multiple ongoing projects in MBR City including Sobha Hartland.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Sobha", "MBR City"]
+  },
+  {
+    "id": "g12",
+    "category": "multihop",
+    "question": "Which areas have the most RERA-permitted projects currently?",
+    "expected_answer": "Downtown Dubai, Dubai Marina, and JVC have the highest number of RERA-permitted projects.",
+    "expected_query_type": "graph",
+    "expected_entities": ["RERAPermit", "Area"]
+  },
+  {
+    "id": "g13",
+    "category": "multihop",
+    "question": "Find developers who launched projects in areas near tram stops.",
+    "expected_answer": "Developers with projects near tram stops include Emaar (Dubai Marina), Select Group (JBR), and others.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Developer", "TramStop"]
+  },
+  {
+    "id": "g14",
+    "category": "multihop",
+    "question": "What is the total number of units across all Emaar projects in Dubai?",
+    "expected_answer": "Emaar has thousands of units across their Dubai project portfolio spanning multiple communities.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Emaar", "Unit"]
+  },
+  {
+    "id": "g15",
+    "category": "multihop",
+    "question": "Which 3-bed units in Downtown have been part of more than one transaction?",
+    "expected_answer": "Several 3-bed units in Downtown have transacted multiple times showing price appreciation.",
+    "expected_query_type": "graph",
+    "expected_entities": ["Downtown Dubai", "Unit", "Transaction"]
+  },
+  {
+    "id": "s01",
+    "category": "semantic",
+    "question": "What did analysts say about Dubai Marina supply risk last month?",
+    "expected_answer": "Recent analysis discusses supply concerns in Dubai Marina with new tower completions potentially impacting prices.",
+    "expected_query_type": "vector",
+    "expected_entities": ["Dubai Marina"]
+  },
+  {
+    "id": "s02",
+    "category": "semantic",
+    "question": "What are the latest RERA regulations about off-plan sales?",
+    "expected_answer": "RERA has implemented regulations requiring escrow accounts and completion milestones for off-plan sales.",
+    "expected_query_type": "vector",
+    "expected_entities": ["RERA"]
+  },
+  {
+    "id": "s03",
+    "category": "semantic",
+    "question": "What is the market sentiment around luxury properties in Dubai?",
+    "expected_answer": "Market sentiment for Dubai luxury properties remains bullish driven by international buyer demand.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "s04",
+    "category": "semantic",
+    "question": "What did news reports say about Dubai real estate foreign investment?",
+    "expected_answer": "News reports highlight increasing foreign investment in Dubai real estate particularly from Indian, Russian, and European buyers.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "s05",
+    "category": "semantic",
+    "question": "Are there any concerns about oversupply in the Dubai property market?",
+    "expected_answer": "Some analysts have raised concerns about potential oversupply in certain segments, though demand remains strong.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "s06",
+    "category": "semantic",
+    "question": "What government initiatives are supporting the Dubai real estate market?",
+    "expected_answer": "Government initiatives include Golden Visa programs, mortgage reforms, and infrastructure development boosting the market.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "s07",
+    "category": "semantic",
+    "question": "What do analysts predict for Dubai property prices in 2025?",
+    "expected_answer": "Analysts predict moderate price growth of 5-10% in 2025 driven by continued demand and limited prime supply.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "s08",
+    "category": "semantic",
+    "question": "What impact has the Golden Visa had on Dubai real estate?",
+    "expected_answer": "The Golden Visa program has significantly boosted demand from international investors seeking residency through property purchases.",
+    "expected_query_type": "vector",
+    "expected_entities": ["Golden Visa"]
+  },
+  {
+    "id": "s09",
+    "category": "semantic",
+    "question": "What sustainability trends are emerging in Dubai real estate?",
+    "expected_answer": "Green building certifications, solar-powered communities, and LEED-certified developments are growing trends in Dubai real estate.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "s10",
+    "category": "semantic",
+    "question": "What are rental yield trends in Dubai compared to other global cities?",
+    "expected_answer": "Dubai offers rental yields of 5-8% which is higher than London (3-4%) and New York (2-3%).",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "h01",
+    "category": "hybrid",
+    "question": "Show me all areas within 800m of a metro station where off-plan transaction ratio is increasing.",
+    "expected_answer": "Areas near metro stations with rising off-plan ratios include Business Bay and Dubai Marina.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["MetroStation", "Area"]
+  },
+  {
+    "id": "h02",
+    "category": "hybrid",
+    "question": "Which developers delivered projects on time in 2023 and 2024, and where are their next off-plan launches?",
+    "expected_answer": "Emaar and Dubai Properties delivered on time in 2023-24, with upcoming launches in Creek Harbour and Dubai Hills.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["Developer"]
+  },
+  {
+    "id": "h03",
+    "category": "hybrid",
+    "question": "What is the average price per sqft for 2-bed apartments in JVC over the last 6 months compared to last year?",
+    "expected_answer": "2-bed apartments in JVC averaged approximately AED 900-1000/sqft in the last 6 months, up from AED 800-900 the previous year.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["JVC", "Jumeirah Village Circle"]
+  },
+  {
+    "id": "h04",
+    "category": "hybrid",
+    "question": "Which 3-bed villas in Dubai Hills have transacted more than twice? What was the flip timeline and gain?",
+    "expected_answer": "Several 3-bed villas in Dubai Hills Estate have seen repeat transactions with typical hold periods of 12-18 months.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["Dubai Hills Estate"]
+  },
+  {
+    "id": "h05",
+    "category": "hybrid",
+    "question": "Is Emaar still the dominant developer in Downtown or has that changed?",
+    "expected_answer": "Emaar remains the dominant developer in Downtown Dubai but other developers have entered with notable projects.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["Emaar", "Downtown Dubai"]
+  },
+  {
+    "id": "h06",
+    "category": "hybrid",
+    "question": "Compare transaction volumes between Dubai Marina and JBR over the past year with recent market sentiment.",
+    "expected_answer": "Dubai Marina outpaces JBR in transaction volume. Market sentiment is positive for both with waterfront premium.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["Dubai Marina", "JBR"]
+  },
+  {
+    "id": "h07",
+    "category": "hybrid",
+    "question": "Which areas near tram stops have shown the most price appreciation and what do analysts say?",
+    "expected_answer": "Areas near tram stops like Dubai Marina and Media City have shown strong appreciation with positive media coverage.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["TramStop", "Area"]
+  },
+  {
+    "id": "h08",
+    "category": "hybrid",
+    "question": "Show developers with projects in areas where prices dropped year-over-year. What went wrong?",
+    "expected_answer": "Some areas like International City and Discovery Gardens saw price corrections due to oversupply.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["Developer", "Area"]
+  },
+  {
+    "id": "h09",
+    "category": "hybrid",
+    "question": "Which Nakheel projects near metro stations have the best rental yields according to recent reports?",
+    "expected_answer": "Nakheel projects in areas like Discovery Gardens and Ibn Battuta offer competitive rental yields.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["Nakheel", "MetroStation"]
+  },
+  {
+    "id": "h10",
+    "category": "hybrid",
+    "question": "What is the correlation between new metro line announcements and price changes in nearby areas?",
+    "expected_answer": "Areas announced for new metro lines typically see 10-15% price appreciation in the 6-12 months following announcement.",
+    "expected_query_type": "hybrid",
+    "expected_entities": ["MetroStation", "Area"]
+  },
+  {
+    "id": "a01",
+    "category": "adversarial",
+    "question": "What is the crime rate in Dubai Marina?",
+    "expected_answer": "I don't have data on this. My knowledge covers real estate transactions, property developments, and market analysis.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "a02",
+    "category": "adversarial",
+    "question": "Can you recommend me a good restaurant near Downtown Dubai?",
+    "expected_answer": "I don't have data on this. Please refine your question or check back after the next data sync.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "a03",
+    "category": "adversarial",
+    "question": "What is the population of Abu Dhabi?",
+    "expected_answer": "I don't have data on this. My knowledge is focused on the Dubai real estate market.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "a04",
+    "category": "adversarial",
+    "question": "Write me a poem about Dubai skyline.",
+    "expected_answer": "I don't have data on this. I'm designed to answer questions about Dubai real estate market data and analysis.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  },
+  {
+    "id": "a05",
+    "category": "adversarial",
+    "question": "What are the best schools in Dubai Hills?",
+    "expected_answer": "I don't have data on this. My expertise is limited to property transactions, developer information, and market analysis.",
+    "expected_query_type": "vector",
+    "expected_entities": []
+  }
+]
